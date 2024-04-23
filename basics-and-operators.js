@@ -212,3 +212,11 @@ console.log('MESSAGE', message);
 // Precedence of Operators
 let xx = 2 + 3 * 4; // 3 * 4 + 2
 // PEMDAS
+
+// excirse- swapping variables
+let a = 'red';
+let b = 'blue';
+let c = a;
+a = b;
+b = c;
+console.log(a, b);
