@@ -185,4 +185,30 @@ console.log(currentColor); //red
 // if userColor = undefined then the currentColor would be blue
 
 // bitwise
-//
+// 1 = 00000001 <- 8 digits each is a bit so this is 8 bits that is 1 byte
+//2 = 00000010
+//3 = 00000011
+//R = 00000000
+console.log(1 | 2); // BitWise OR < it would be 3
+console.log(1 & 2); // BitWise AND < it would be 0
+
+//Read,Write,Execute
+// we can use 1 byte of info to see what permission a user has
+//00000100 <read permissions
+//00000110 < read AND WRITE
+//00000111 < read write AND execute
+
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+myPermission = myPermission | readPermission | writePermission;
+console.log(myPermission); //6
+let message = myPermission & readPermission ? 'yes' : 'no';
+
+console.log('MESSAGE', message);
+
+// Precedence of Operators
+let xx = 2 + 3 * 4; // 3 * 4 + 2
+// PEMDAS
