@@ -122,11 +122,67 @@ console.log(w <= 1); //true
 console.log(w === 1); //is equal to
 console.log(w !== 1); //is NOT equal to
 console.log(1 === 1); //true
-console.log('1' == 1); //false
+console.log('1' === 1); //false
 
 // LOOSE equality ()
 console.log(1 == 1);
 console.log(1 == '1');
+console.log(true == 1); //converts from left to right
+// types dont need to match it just checks if values are equal
 
-// logical
+// Tenary Operator
+// if a customer has more than 100 points they are a 'gold customer, otherwise, they are silver customer
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+// ? means then : means otherwise
+console.log(type); //gold
+
+// Logcal Operators
+
+// use to make decisions based on many conditions
+// Logical AND (&&)
+// returns true if bother operands are true
+console.log(true && true); //true
+console.log(false && true); //false
+console.log(false && false); //false
+
+let highIncome = true;
+let goodCredit = true;
+let eligible = highIncome && goodCredit;
+console.log(eligible); //true
+
+//Logical OR (||);
+// returns true if one of the operands is TRUE
+console.log(true || true); //true
+console.log(false || true); //true
+console.log(false || false); //false
+
+let highMoney = false;
+let creditScore = true;
+let eligibleLoan = highMoney || creditScore;
+console.log(eligibleLoan); //true
+
+//NOT (!)
+let applicationRefused = !eligible; //false and application refused is false
+//this converts eligible to the opposite of what it is. if its true it becomes false
+
+// the result of a logical experission is not really true or false it depends on the value of the 'truthy' operand
+// Falsy (false):
+// undefiend
+// null
+// 0
+// ''
+// NaN
+
+// Anthing that is not Falsy -> Truthy
+// false || 1 || 2 as soon as an operant that is truthy is hit, it returns
+// this is called short-curcuiting
+
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor); //red
+// if userColor = undefined then the currentColor would be blue
+
 // bitwise
+//
