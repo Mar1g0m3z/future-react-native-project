@@ -46,24 +46,39 @@ switch (role) {
 //LOOPS
 // repeat action number of times
 // For
-for (let i = 0; i < 5; i++) {
-	if (i % 2 !== 0) {
-		console.log(i);
-	}
-}
+// for (let i = 0; i < 5; i++) {
+// 	if (i % 2 !== 0) {
+// 		console.log(i);
+// 	}
+// }
 // you can also iterate backwards
-for (let i = 5; i >= 1; i--) {
-	if (i % 2 !== 0) {
-		console.log(i);
-	}
-}
+// for (let i = 5; i >= 1; i--) {
+// 	if (i % 2 !== 0) {
+// 		console.log(i);
+// 	}
+// }
 
 // the loop executes as long as the condition is true (less than 5) then i is increased by 1
 
 // WHILE loop
 // in for loops the loop variable is inside the loop but in while loop it is external
-let i = 0;
+// let i = 0;
 while (i <= 5) {
 	if (i % 2 !== 0) console.log(i);
 	i++;
 }
+
+// Do-While Loops
+// the loop variable will be outside like a while loop
+let i = 0;
+
+do {
+	if (i % 2 !== 0) {
+		//recall this is for odd numbers
+		console.log(i);
+		i++;
+	}
+} while (i <= 5);
+
+// do while always executed at least once, even if the condition is false
+// because the condition is evaluated at the end.
