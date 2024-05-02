@@ -174,3 +174,16 @@ function fizzBuzz(input) {
 }
 
 console.log(fizzBuzz(true));
+
+// speed limit = 70
+// if below or at or less than 5 above = "ok"
+// for every 5 above- you get one point
+// if a driver gets more than 12 points => suspended
+// use Math.floor
+
+function checkSpeed(speed) {
+	const speedLimit = 70;
+	if (speed < speedLimit) {
+		return 'Ok';
+	}
+}
