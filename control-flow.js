@@ -182,9 +182,9 @@ console.log(fizzBuzz(true));
 // use Math.floor
 
 function checkSpeed(speed) {
-	const speedLimit = 70;
+	const speedLimit = 80;
 	const kmPerPoint = 5;
-	if (speed <= speedLimit) {
+	if (speed < speedLimit + kmPerPoint) {
 		console.log('Ok');
 	} else {
 		let points = Math.floor((speed - speedLimit) / kmPerPoint);
@@ -195,4 +195,4 @@ function checkSpeed(speed) {
 	}
 }
 
-checkSpeed(33);
+checkSpeed(75);
