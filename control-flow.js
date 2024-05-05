@@ -181,19 +181,36 @@ console.log(fizzBuzz(true));
 // if a driver gets more than 12 points => suspended
 // use Math.floor
 
-function checkSpeed(speed) {
-	const speedLimit = 80;
-	const kmPerPoint = 5;
-	if (speed < speedLimit + kmPerPoint) {
-		console.log('Ok');
-		return;
-	} else {
-		let points = Math.floor((speed - speedLimit) / kmPerPoint);
-		if (points >= 12) console.log('Liscense suspended');
-		else {
-			console.log('points', points);
-		}
+// function checkSpeed(speed) {
+// 	const speedLimit = 80;
+// 	const kmPerPoint = 5;
+// 	if (speed < speedLimit + kmPerPoint) {
+// 		console.log('Ok');
+// 		return;
+// 	} else {
+// 		let points = Math.floor((speed - speedLimit) / kmPerPoint);
+// 		if (points >= 12) console.log('Liscense suspended');
+// 		else {
+// 			console.log('points', points);
+// 		}
+// 	}
+// }
+
+// checkSpeed(75);
+
+function showNumbers(limit) {
+	// for (let i = 0; i <= limit; i++) {
+	// 	if (i % 2 === 0) {
+	// 		console.log(i, 'EVEN');
+	// 	} else {
+	// 		console.log(i, 'ODD');
+	// 	}
+	// }
+	// OR
+	for (let i = 0; i <= limit; i++) {
+		const message = i % 2 === 0 ? 'EVEN' : 'ODD';
+		console.log(i, message);
 	}
 }
 
-checkSpeed(75);
+showNumbers(12);
