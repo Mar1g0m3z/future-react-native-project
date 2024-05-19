@@ -255,26 +255,52 @@
 // }
 // sum(10);
 
-const marks = [90, 80, 90];
+// const marks = [90, 80, 90];
 
-function calculateGrade(marks) {
-	let sum = 0;
+// function calculateGrade(marks) {
+// 	let sum = 0;
 
-	for (let i = 0; i < marks.length; i++) {
-		sum += marks[i];
-	}
-	let average = Math.floor(sum / marks.length);
-	console.log(average);
-	if (average <= 59) {
-		console.log('F');
-	} else if (average <= 69) {
-		console.log('D');
-	} else if (average <= 79) {
-		console.log('C');
-	} else if (average <= 89) {
-		console.log('B');
-	} else if (average <= 100) {
-		console.log('A');
+// 	for (let i = 0; i < marks.length; i++) {
+// 		sum += marks[i];
+// 	}
+// 	let average = Math.floor(sum / marks.length);
+// 	console.log(average);
+// 	if (average <= 59) {
+// 		console.log('F');
+// 	} else if (average <= 69) {
+// 		console.log('D');
+// 	} else if (average <= 79) {
+// 		console.log('C');
+// 	} else if (average <= 89) {
+// 		console.log('B');
+// 	} else if (average <= 100) {
+// 		console.log('A');
+// 	}
+// }
+// calculateGrade(marks);
+
+// function showStars(rows) {
+// 	for (let i = 1; i <= rows; i++) {
+// 		let pattern = '';
+// 		for (let j = 0; j < i; j++) {
+// 			pattern += '*';
+// 		}
+// 		console.log(pattern);
+// 	}
+// }
+// showStars(8);
+
+function showPrimes(limit) {
+	for (i = 0; i <= limit; i++) {
+		if (i === 1) {
+			continue;
+		}
+		if (i === 2) {
+			console.log(i);
+		}
+		if (i % 2 !== 0) {
+			console.log(i);
+		}
 	}
 }
-calculateGrade(marks);
+showPrimes(20);
