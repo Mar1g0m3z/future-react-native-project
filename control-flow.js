@@ -215,16 +215,32 @@ console.log(fizzBuzz(true));
 
 // showNumbers(12);
 
-function countTruthy(array) {
-	let count = 0;
-	for (let i = 0; i < array.length; i++) {
-		if (array[i]) {
-			count++;
+// function countTruthy(array) {
+// 	let count = 0;
+// 	for (let i = 0; i < array.length; i++) {
+// 		if (array[i]) {
+// 			count++;
+// 		}
+// 	}
+// 	return count;
+// }
+
+// const array = [0, '', 3, NaN, 1];
+
+// console.log(countTruthy(array));
+
+const movie = {
+	title: 'a',
+	realeaseYear: 2018,
+	rating: 4.5,
+	director: 'b',
+};
+
+showProperties('string');
+function showProperties(obj) {
+	for (key in movie) {
+		if (typeof movie[key] == obj) {
+			console.log(key, movie[key]);
 		}
 	}
-	return count;
 }
-
-const array = [0, '', 3, NaN, 1];
-
-console.log(countTruthy(array));
