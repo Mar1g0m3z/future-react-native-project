@@ -244,13 +244,37 @@
 // 		}
 // 	}
 // }
-function sum(limit) {
+// function sum(limit) {
+// 	let sum = 0;
+// 	for (let i = 1; i <= limit; i++) {
+// 		if (i % 3 === 0 || i % 5 === 0) {
+// 			sum += i;
+// 		}
+// 	}
+// 	return console.log(sum);
+// }
+// sum(10);
+
+const marks = [90, 80, 90];
+
+function calculateGrade(marks) {
 	let sum = 0;
-	for (let i = 1; i <= limit; i++) {
-		if (i % 3 == 0 || i % 5 == 0) {
-			sum += i;
-		}
+
+	for (let i = 0; i < marks.length; i++) {
+		sum += marks[i];
 	}
-	return console.log(sum);
+	let average = Math.floor(sum / marks.length);
+	console.log(average);
+	if (average <= 59) {
+		console.log('F');
+	} else if (average <= 69) {
+		console.log('D');
+	} else if (average <= 79) {
+		console.log('C');
+	} else if (average <= 89) {
+		console.log('B');
+	} else if (average <= 100) {
+		console.log('A');
+	}
 }
-sum(10);
+calculateGrade(marks);
