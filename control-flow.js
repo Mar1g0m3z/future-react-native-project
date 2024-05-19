@@ -290,17 +290,20 @@
 // }
 // showStars(8);
 
-function showPrimes(limit) {
-	for (i = 0; i <= limit; i++) {
-		if (i === 1) {
-			continue;
-		}
-		if (i === 2) {
-			console.log(i);
-		}
-		if (i % 2 !== 0) {
-			console.log(i);
-		}
-	}
-}
-showPrimes(20);
+// function showPrimes(limit) {
+// 	for (let number = 2; number <= limit; number++) {
+// 		if (isPrime(number)) {
+// 			console.log(number);
+// 		}
+// 	}
+// }
+// showPrimes(10);
+
+// function isPrime(number) {
+// 	for (let factor = 2; factor < number; factor++) {
+// 		if (number % factor === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// }
