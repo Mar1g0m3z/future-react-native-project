@@ -3,7 +3,14 @@
 // this should be enough lol
 
 //OOP
-// a program a collection of objects that talk to each other
+// a style of programing where we see a program as collection of objects that talk to each other to perform some functionality
+//
+
+// {
+// key:pair
+// } object literal
+// group related variables. and functions that should operate on the keys /values
+
 const circle = {
 	radius: 1,
 	location: {
