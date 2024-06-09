@@ -11,16 +11,24 @@
 // } object literal
 // group related variables. and functions that should operate on the keys /values
 
-const circle = {
-	radius: 1,
-	location: {
-		x: 1,
-		y: 1,
-	},
-	isVisible: true,
-	draw: function () {
-		console.log('draw');
-	},
-};
+//draw method: is a function part of an object
 
-circle.draw(); //draw method: is a function part of an object
+// FACTORY FUNCTION
+function createCircle(radius) {
+	// if key and value the same remove the value and just do the key.
+	return {
+		radius,
+
+		draw() {
+			console.log('draw');
+		},
+	};
+}
+
+const circle1 = createCircle(1);
+
+console.log(circle1);
+circle1.draw();
+
+const circle2 = createCircle(22);
+console.log(circle2);
