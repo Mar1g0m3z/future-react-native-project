@@ -25,6 +25,8 @@ function createCircle(radius) {
 	};
 }
 
+// Camel Notation: oneTwoThreeFour
+// Pascal Notation: OneTwoThreeFour
 const circle1 = createCircle(1);
 
 console.log(circle1);
@@ -32,3 +34,14 @@ circle1.draw();
 
 const circle2 = createCircle(22);
 console.log(circle2);
+
+// CONSTRUCTOR FUNCTIONS
+
+function Circle(radius) {
+	this.radius = radius;
+	this.draw = function () {
+		console.log('draw');
+	};
+}
+
+const circle = new Circle(1);
