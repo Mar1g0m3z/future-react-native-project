@@ -49,13 +49,31 @@
 // DYNAMIC NATURE OF OBJECTS
 // you can add new properties and methods or remove existing ones
 
-const circle = {
-	radius: 1,
-};
+// const circle = {
+// 	radius: 1,
+// };
 
 // because we used const for the circle we cannot reassign the variable, or make circle a new object
-circle.color = 'yellow';
-circle.draw = function () {};
+// circle.color = 'yellow';
+// circle.draw = function () {};
 
-delete circle.color;
-delete circle.draw;
+// delete circle.color;
+// delete circle.draw;
+
+// CONSTRUCTOR PROPERTY
+// every object has this property
+// the function to construct or create that object
+
+// constructor Function
+// function Circle(radius) {
+// 	this.radius = radius;
+// 	this.draw = function () {
+// 		console.log('draw');
+// 	};
+// }
+
+// let x = {};
+// JS engine says: let x = new Object();
+// ssame with new String(); but we use '', "". ``
+// new Boolean(); but we use the literals of true, false
+// same with new Number()
