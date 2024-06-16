@@ -14,34 +14,48 @@
 //draw method: is a function part of an object
 
 // FACTORY FUNCTION
-function createCircle(radius) {
-	// if key and value the same remove the value and just do the key.
-	return {
-		radius,
+// function createCircle(radius) {
+// 	// if key and value the same remove the value and just do the key.
+// 	return {
+// 		radius,
 
-		draw() {
-			console.log('draw');
-		},
-	};
-}
+// 		draw() {
+// 			console.log('draw');
+// 		},
+// 	};
+// }
 
 // Camel Notation: oneTwoThreeFour
 // Pascal Notation: OneTwoThreeFour
-const circle1 = createCircle(1);
+// const circle1 = createCircle(1);
 
-console.log(circle1);
-circle1.draw();
+// console.log(circle1);
+// circle1.draw();
 
-const circle2 = createCircle(22);
-console.log(circle2);
+// const circle2 = createCircle(22);
+// console.log(circle2);
 
 // CONSTRUCTOR FUNCTIONS
 
-function Circle(radius) {
-	this.radius = radius;
-	this.draw = function () {
-		console.log('draw');
-	};
-}
+// function Circle(radius) {
+// 	this.radius = radius;
+// 	this.draw = function () {
+// 		console.log('draw');
+// 	};
+// }
 
-const circle = new Circle(1);
+// const circle = new Circle(1);
+
+// DYNAMIC NATURE OF OBJECTS
+// you can add new properties and methods or remove existing ones
+
+const circle = {
+	radius: 1,
+};
+
+// because we used const for the circle we cannot reassign the variable, or make circle a new object
+circle.color = 'yellow';
+circle.draw = function () {};
+
+delete circle.color;
+delete circle.draw;
