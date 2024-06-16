@@ -77,3 +77,24 @@
 // ssame with new String(); but we use '', "". ``
 // new Boolean(); but we use the literals of true, false
 // same with new Number()
+
+// FUNCTIONS ARE OBJECTS
+//
+function Circle(radius) {
+	this.radius = radius;
+	this.draw = function () {
+		console.log('draw');
+	};
+}
+// functions have function constructor
+const Circle1 = new Function(
+	'radius',
+	`
+	this.radius = radius;
+	this.draw = function () {
+		console.log('draw');
+	}`,
+);
+
+const circle = new Circle(1);
+const another = new Circle(1);
