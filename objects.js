@@ -80,21 +80,26 @@
 
 // FUNCTIONS ARE OBJECTS
 //
-function Circle(radius) {
-	this.radius = radius;
-	this.draw = function () {
-		console.log('draw');
-	};
-}
+// function Circle(radius) {
+// 	this.radius = radius;
+// 	this.draw = function () {
+// 		console.log('draw');
+// 	};
+// }
 // functions have function constructor
-const Circle1 = new Function(
-	'radius',
-	`
-	this.radius = radius;
-	this.draw = function () {
-		console.log('draw');
-	}`,
-);
+// const Circle1 = new Function(
+// 	'radius',
+// 	`
+// 	this.radius = radius;
+// 	this.draw = function () {
+// 		console.log('draw');
+// 	}`,
+// );
 
-const circle = new Circle(1);
-const another = new Circle(1);
+// const circle = new Circle(1);
+// const another = new Circle(1);
+
+
+// Value/Primitive vs Reference Reference Types
+// Primitive: Number, string, Boolean, Symbol, undefined, null
+// references: Obhect, function Array
