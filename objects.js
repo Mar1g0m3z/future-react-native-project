@@ -99,7 +99,6 @@
 // const circle = new Circle(1);
 // const another = new Circle(1);
 
-
 // Value/Primitive vs Reference Reference Types
 // Primitive: Number, string, Boolean, Symbol, undefined, null
 // references: Obhect, function Array
@@ -107,23 +106,42 @@
 // Enumerating Proerties of an Object
 // an object is not iterable
 
-const circle = {
-    radius: 1,
-    draw() {
-        console.log('draw');
-    }
-}
+// const circle = {
+//     radius: 1,
+//     draw() {
+//         console.log('draw');
+//     }
+// }
 
-for (let key in circle)
-    console.log(key, circle[key])
+// for (let key in circle)
+//     console.log(key, circle[key])
 
-// a normal for of loop wouldnt work
-for (let key of Object.keys(circle))
-    console.log(key);
+// // a normal for of loop wouldnt work
+// for (let key of Object.keys(circle))
+//     console.log(key);
 
-// Object.keys gives a array of strings of the keys of the object
-for (let key of Object.entries(circle))
-    console.log(key);
+// // Object.keys gives a array of strings of the keys of the object
+// for (let key of Object.entries(circle))
+//     console.log(key);
 // entries reeturns each value pair as an array
 
 // when we define an object using the object literal (ex: const x = {}) we are actually calling on the object function to create te new Object. so it would be like const x = new Object()
+
+// Cloning Objects
+
+const circle = {
+	radius: 1,
+	draw() {
+		console.log('draw');
+	},
+};
+
+// const another = {};
+
+// for (let key in circle) another[key] = circle[key];
+// this is like saying: another['radius'] = circle['radius']
+
+// More modern way to clone:
+
+const another = Object.assign({}, circle);
+// this methods, takes the empty object/existing object,or a key value pair or with methods and copies the named object next to it thats cool
