@@ -149,4 +149,15 @@ const another = Object.assign({}, circle);
 
 // Garbage Collection
 // in JS memory is auto allocated to a memory. JS has a garbage collector, for ariables that are no longer in use and just deallocate the memory that was allocated to them earlier. This happens automatically
-// 
+
+// BUILT IN METHOD OBJECTS
+
+// Math:
+// A built in object has methods for mathematical constants and functions
+
+// Math.abs(x) returns absolute value of a number... etc. 
+// Math.floor(x): returns the largest integer less than or equal to a number
+// Math.random() gives us a random number between 0-1. 
+// Math.round(1.9) = 2
+// Math.max(1,2,3,4,5) = 5
+// MAth.min(1,2,3,4,5) = 1
