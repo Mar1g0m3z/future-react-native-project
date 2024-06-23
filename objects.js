@@ -143,7 +143,7 @@ const circle = {
 
 // More modern way to clone:
 
-const another = Object.assign({}, circle);
+// const another = Object.assign({}, circle);
 // this methods, takes the empty object/existing object,or a key value pair or with methods and copies the named object next to it thats cool
 
 
@@ -161,3 +161,22 @@ const another = Object.assign({}, circle);
 // Math.round(1.9) = 2
 // Math.max(1,2,3,4,5) = 5
 // MAth.min(1,2,3,4,5) = 1
+
+// Strings
+//string primative:  const message = 'hi'. 
+// JS has two kinds of strings
+// string object
+// when we use the dot notation with the primative variable JS wraps it with the string object
+// const another = new String('hi'); < object
+// .length = number of characters
+// message[0] < indexing
+// message.inclues('') < boolean if ir incluswa
+// message.startsWith() <= boolean if it starts with
+// .endsWith() <= ends with 
+// .indexOf()<= index of specific word or character
+// .replace(blank, blank2) <= replaces 
+// toUpperCase()
+// toLowerCase()
+// trim() removes white space
+// \n is new line
+// .split(' ')  > spits a string based on given character, we get array of the items
