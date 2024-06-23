@@ -145,3 +145,8 @@ const circle = {
 
 const another = Object.assign({}, circle);
 // this methods, takes the empty object/existing object,or a key value pair or with methods and copies the named object next to it thats cool
+
+
+// Garbage Collection
+// in JS memory is auto allocated to a memory. JS has a garbage collector, for ariables that are no longer in use and just deallocate the memory that was allocated to them earlier. This happens automatically
+// 
