@@ -105,3 +105,25 @@
 // references: Obhect, function Array
 
 // Enumerating Proerties of an Object
+// an object is not iterable
+
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+}
+
+for (let key in circle)
+    console.log(key, circle[key])
+
+// a normal for of loop wouldnt work
+for (let key of Object.keys(circle))
+    console.log(key);
+
+// Object.keys gives a array of strings of the keys of the object
+for (let key of Object.entries(circle))
+    console.log(key);
+// entries reeturns each value pair as an array
+
+// when we define an object using the object literal (ex: const x = {}) we are actually calling on the object function to create te new Object. so it would be like const x = new Object()
