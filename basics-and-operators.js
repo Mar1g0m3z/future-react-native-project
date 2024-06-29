@@ -220,3 +220,5 @@ let c = a;
 a = b;
 b = c;
 console.log(a, b);
+
+//	1
