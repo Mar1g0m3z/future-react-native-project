@@ -222,3 +222,4 @@ b = c;
 console.log(a, b);
 
 //	1
+// 2
