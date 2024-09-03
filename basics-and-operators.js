@@ -242,3 +242,4 @@ console.log(a, b);
 // 6
 // September 3
 // 1
+// 2
