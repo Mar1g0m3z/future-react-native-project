@@ -262,3 +262,5 @@ console.log(a, b);
 // 3
 // 4
 // ocriber 25
+// 1
+
