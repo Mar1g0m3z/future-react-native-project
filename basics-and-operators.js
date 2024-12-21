@@ -279,7 +279,7 @@ console.log(a, b);
 // november 29
 // 2
 //3
-4
+4;
 let n = 4;
 
 // december 6
@@ -288,8 +288,10 @@ let n = 4;
 // 4
 // 5
 
-//december 14 
+//december 14
 // 2
 //3
 //4
 //5
+
+// december 21
